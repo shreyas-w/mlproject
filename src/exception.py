@@ -20,6 +20,13 @@ class CustomException(Exception):
   def __str__(self):
     return self.error_message
   
+# try:
+#     # Intentionally causing a division by zero error
+#     result = 1 / 0
+# except Exception as e:
+#     # Raise the custom exception with a message and sys module details
+#     logging.info("exception is raised")
+#     raise CustomException("An error occurred", sys) from e
 
 
 
